@@ -3,6 +3,10 @@ package theater;
 import java.io.IOException;
 import java.util.*;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
