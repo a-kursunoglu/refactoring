@@ -1,3 +1,4 @@
+1244abe Task 2.4 Extract totals
 7d69b06 Task 2.3 Introduce usd helper
 68b2c10 Task 2.2 Extract volume credits calculation
 1091868 Task 2.1 Extract amount calculation
