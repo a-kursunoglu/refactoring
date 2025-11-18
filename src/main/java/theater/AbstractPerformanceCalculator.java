@@ -18,6 +18,13 @@ public abstract class AbstractPerformanceCalculator {
         this.play = play;
     }
 
+    /**
+     * Factory for the appropriate calculator implementation for a performance/play pair.
+     *
+     * @param performance performance being evaluated
+     * @param play associated play
+     * @return calculator for the play type
+     */
     public static AbstractPerformanceCalculator createPerformanceCalculator(Performance performance, Play play) {
         switch (play.getType()) {
             case "tragedy":
@@ -41,6 +48,11 @@ public abstract class AbstractPerformanceCalculator {
         return play;
     }
 
+    /**
+     * Calculates the amount owed for the performance.
+     *
+     * @return amount owed in cents
+     */
     public abstract int getAmount();
 
     /**

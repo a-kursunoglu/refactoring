@@ -65,13 +65,13 @@ public class StatementPrinter {
     }
 
     protected int getAmount(Performance performance) {
-        AbstractPerformanceCalculator calculator =
+        final AbstractPerformanceCalculator calculator =
                 AbstractPerformanceCalculator.createPerformanceCalculator(performance, getPlay(performance));
         return calculator.getAmount();
     }
 
     protected int getVolumeCredits(Performance performance) {
-        AbstractPerformanceCalculator calculator =
+        final AbstractPerformanceCalculator calculator =
                 AbstractPerformanceCalculator.createPerformanceCalculator(performance, getPlay(performance));
         return calculator.getVolumeCredits();
     }
